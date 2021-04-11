@@ -1,0 +1,272 @@
+/* ! start General style */
+.c_white {
+  color: #fff;
+}
+@font-face {
+  font-family: font_1;
+  src: url("./fonts/font_1/PTSerif-Italic.ttf");
+}
+.font_1 {
+  font-family: font_1;
+}
+@font-face {
+  font-family: font_2;
+  src: url("./fonts/font_2/PatuaOne-Regular.ttf");
+}
+.font_2 {
+  font-family: font_2;
+}
+@font-face {
+  font-family: font_3;
+  src: url("./fonts/font_3/FugazOne-Regular.ttf");
+}
+.font_3 {
+  font-family: font_3;
+}
+@font-face {
+  font-family: font_4;
+  src: url("./fonts/font_4/Parisienne-Regular.ttf");
+}
+.font_4 {
+  font-family: font_4;
+  line-height: 1.5em;
+}
+/* ! end General style */
+
+/* ! start head style */
+body > * {
+  z-index: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.avatar_two {
+  background: url("https://i.pinimg.com/originals/cc/79/55/cc79556a238976197ecf3beb79a72f6c.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.overlay {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(235, 226, 226);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  opacity: 0.7;
+  z-index: 0;
+}
+.dark {
+  background: transparent;
+  border: none;
+  color: #005b91;
+  font-size: 2em;
+}
+.mornning {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 2em;
+  position: relative;
+  right: 0.3em;
+}
+.mornning > .fa-moon {
+  display: none;
+}
+.stop_morning {
+  visibility: hidden;
+}
+.ok_morning {
+  visibility: visible;
+}
+.ml11 {
+  font-weight: 700;
+  font-size: 2.3em;
+  color: #57497d;
+  font-family: font_1;
+  position: relative;
+  right: 4.5em;
+}
+.ml11 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.1em;
+  padding-right: 1em;
+  padding-bottom: 0.15em;
+}
+.ml11 .line {
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: #2f4858;
+  transform-origin: 0 50%;
+}
+.ml11 .line1 {
+  top: 0;
+  left: 0;
+}
+.ml11 .letter {
+  display: inline-block;
+}
+/* ! end head style */
+
+/* ! start body style */
+
+label {
+  color: #005b91;
+  font-weight: lighter;
+}
+.btn {
+  font-size: 2em;
+  font-weight: 1.5vw;
+  border: 5px double transparent;
+}
+.btn:hover {
+  border: 5px double #fff;
+  overflow: hidden;
+}
+.input {
+  border: 2px solid #fed049;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  outline: none;
+  color: #1d1d35;
+}
+#about_all,
+#team_name {
+  font-size: 2.5em;
+  font-family: font_3;
+  text-align: center;
+  color: #1d1d35;
+  font-weight: bolder;
+}
+#about_win,
+#about_lost,
+#about_matches,
+#about_equalized {
+  font-size: 2em;
+  font-family: font_1;
+  text-align: center;
+  color: #3d3c3c;
+  font-weight: bolder;
+}
+.footer {
+  position: relative;
+  top: 7.5em;
+  font-size: 2em;
+  background: #212529;
+  line-height: 1.5em;
+}
+.footer_two {
+  position: relative;
+  top: 7.5em !important;
+  font-size: 2em;
+  background: #212529;
+  line-height: 1.5em;
+}
+.footer p {
+  margin: 0%;
+}
+.footer_Results {
+  top: 0.7em;
+}
+.footer_Results_two {
+  background: #fff !important;
+  color: #212529 !important;
+}
+.dark_link {
+  color: #212529;
+}
+/* ! end body style */
+
+/* ! start  style dark */
+.dark_mood {
+  color: #f9f871;
+  font-size: 2em;
+}
+.avatar {
+  background: url("/291-2912449_ronaldinho-quotes-tumblr-ronaldinho-hd-wallpaper-black\ \(2\).jpg");
+  background-size: cover;
+  background-position: center center;
+}
+.title_dark {
+  color: #fff;
+}
+.line_dark {
+  background-color: transparent;
+}
+.overLay_dark {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(65, 63, 63);
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  opacity: 0.7;
+  z-index: 0;
+}
+.lable_dark {
+  color: #f9f871;
+}
+.input_dark {
+  background-color: #d6f4ff;
+  border: #fff double 2px;
+  color: #8685ef;
+}
+.Restart_dark,
+.Results_dark {
+  background: #1d1c1c;
+  color: #fff;
+  border: 5px double #fff;
+}
+.Restart_dark:hover,
+.Results_dark:hover {
+  border: 5px double #1d1c1c;
+  background: #fff;
+  color: #000;
+}
+.result_dark {
+  color: #fff !important;
+}
+.finel_dark {
+  color: #cb965d !important;
+}
+
+/* ! end  style dark */
+
+@media (max-width: 575px) {
+  body {
+    background: url("https://i.pinimg.com/originals/cc/79/55/cc79556a238976197ecf3beb79a72f6c.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+  .ml11 {
+    font-size: 1.5em;
+    right: 0%;
+  }
+  .btn {
+    font-size: 1em;
+  }
+  #about_win,
+  #about_lost,
+  #about_matches,
+  #about_equalized {
+    font-size: 1em;
+  }
+  #about_all,
+  #team_name {
+    font-size: 1.5em;
+    padding: 0% !important;
+  }
+  .footer {
+    display: none;
+  }
+}

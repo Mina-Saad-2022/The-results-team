@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.pngrepo.com/download/206905/football.png">
+    <link rel="stylesheet" href="style/Libraries/fontawesome-free-5.15.1-web/css/all.css">
+    <link rel="stylesheet" href="style/Libraries/bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" href="style/Libraries/bootstrap-5/new-style-bootstrap.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Soccer team results</title>
+</head>
+<body class="avatar_two">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="text-center col-12 col-sm-4 moon">
+                <button onclick="dark_night() " class="dark"><i class="fas fa-moon" id="small_icone"></i></button>
+            </div>
+            <div class="text-center col-12  m-auto col-sm-8">
+                <h1 class="ml11">
+                    <span class="text-wrapper">
+                        <span class="line line1"></span>
+                        <span class="letters w-100">Please include team results in the designated fields</span>
+                    </span>
+                </h1>
+            </div>
+        </div>
+        <form action="">
+            <div class="row">
+                <div class="col-12 col-sm-6  col-lg-6 m-auto dtat">
+                    <label for="team_name" class="d-block p-2 label font_2 fs-6 text-center"><i
+                            class="fas fa-chess-queen"></i> your Team Name</label>
+                    <input required maxlength="8" minlength="4" type="text" value="" id="teamName"
+                        class="w-100 input p-2 font_2" placeholder="please type Team Name" value="">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-12 col-sm-6   col-lg-6">
+                    <label for="total_matches" class="d-block p-2 label font_2 fs-5"><i class="far fa-futbol"></i> The
+                        team Matches</label>
+                    <input required maxlength="3" type="text" value="" id="total_matches" class="w-100 input p-2 font_2"
+                        placeholder="please type number of play" size="35" value="">
+                </div>
+                <div class="col-12 col-sm-6   col-lg-6">
+                    <label for="win" class="d-block p-2 label font_2 fs-5"><i class="fas fa-check-circle"></i> The
+                        Number of win</label>
+                    <input onkeyup="the_win()" required maxlength="3" type="text" value="" id="win"
+                        class="w-100 input p-2 font_2" placeholder="please type number of win">
+                </div>
+                <div class="col-12 col-sm-6   col-lg-6">
+                    <label for="Equalized " class="d-block p-2 label font_2 fs-5"><i class="fas fa-question-circle"></i>
+                        The Number of Equalized</label>
+                    <input onkeyup="the_equalized()" required maxlength="3" type="text" value="" id="Equalized"
+                        class="w-100 input p-2 font_2" placeholder="please type number of Equalized">
+                </div>
+                <div class="col-12 col-sm-6   col-lg-6">
+                    <label for="lost" class="d-block p-2 label font_2 fs-5"><i class="fas fa-times-circle"></i> The
+                        Number of lost</label>
+                    <input onkeyup="the_lost()" required maxlength="3" type="text" value="" id="lost"
+                        class="w-100 input p-2 font_2" placeholder="please type number of lost">
+                </div>
+            </div>
+        </form>
+        <div class="d-flex justify-content-between">
+            <button onclick="keke()" type="button" class="btn btn-success w-50 mx-2 font_2 p-2 "> Show the
+                Results</button>
+            <button onclick="clear()" type="reset" class="btn btn-danger w-50 font_2 p-2 " id="clead_data"
+                value=""><i class="fas fa-undo-alt"></i> Restart</button>
+        </div>
+        <div  class="the_finel" id="team_name"></div>
+        <div class="m-auto the_result" id="about_matches"></div>
+        <div class="m-auto the_result" id="about_win"></div>
+        <div class="m-auto the_result" id="about_equalized"></div>
+        <div class="m-auto the_result" id="about_lost"></div>
+        <div class="m-auto the_finel" id="about_all"></div>
+    </div>
+    <div class="w-100 h-25  footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class=" m-auto col-10 text-center ">
+                    <p class="light text-center font_3">© 2010-2021 365PSD.com, All Rights Reserved.</p>
+                </div>
+                <div class="col-2 m-auto d-flex">
+                    <h3 class="light text-center font_4 fw-bold">Mina saad</h3>
+                    <a href="#" class="font_4 fs-4 mx-2 c_white link"  id="line"><i class="fab fa-facebook"></i></a>
+
+                    <a href="#" class="font_4 fs-4 mx-2 c_white  link" id="line"><i class="fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+        
+    
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="style/Libraries/jq/jquery.js"></script>
+    <script src="js/bootstarp/js/bootstrap.min.js"></script>
+    <script src="js/java-script.js"></script>
+</body>
+
+</html>
